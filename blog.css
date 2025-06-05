@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*以上是reset css，以下開始設定CSS*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans TC", sans-serif;
+    background: #FBFBFB;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* header */
+.header {
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    gap: 40px;
+}
+
+.option {
+    color: #000;
+    padding-bottom: 24px;
+    padding-top: 24px;
+}
+
+.option:hover {
+    color: #0027D5;
+}
+
+.about-content {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 80px;
+    border-bottom: 1px solid #6C757D;
+    border-top: 1px solid #6C757D;
+    border-right: 1px solid #6C757D;
+}
+
+.about-textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 312px;
+}
+
+.about-textbox time {
+    padding-bottom: 4px;
+}
+
+.about-textbox-title .job-title {
+    display: inline-block;
+    color: #0027D5;
+    font-size: 24px;
+    padding-bottom: 8px;
+}
+
+.about-textbox-title .hit {
+    color: #FFFFFF;
+    background: #0027D5;
+    border-radius: 80px;
+    font-weight: 700;
+    padding: 6px 12px;
+    vertical-align: top;
+}
+
+.about-textbox .title {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+@media(max-width:992px) {
+    .about-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-textbox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 48px 12px;
+    }
+}
+
+@media(max-width:767px) {
+    .about-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-textbox {
+        display: flex;
+        flex-direction: column;
+        padding: 48px 12px;
+    }
+}
+
+/* content--前言 */
+.content {
+    max-width: 636px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.article {
+    margin-bottom: 48px;
+}
+
+.article-pic img {
+    margin-bottom: 24px;
+}
+
+.pre-title,
+.maintitle {
+    color: #0027D5;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+.pre-text {
+    margin-bottom: 48px;
+}
+
+.title3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.article-text {
+    margin-bottom: 8px;
+}
+
+.article-section ul {
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+.article-section span {
+    color: #0027D5;
+}
+
+.tips {
+    font-weight: 700;
+    background: #EDEDED;
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.article-section ol {
+    list-style-type: disc;
+    list-style-position: inside;
+    margin-bottom: 24px;
+    display: inline-block;
+    text-indent: -1.3em;
+    /*文字縮排、凸排*/
+    margin-left: 1.3em;
+    /*文字縮排、凸排*/
+}
+
+.conclusion {
+    margin-bottom: 24px;
+}
+
+.article-section-contact {
+    text-decoration: underline;
+}
+
+.page-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-btn-left {
+    background-image: url('images/chevron-left 1.png');
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 24px;
+    border: 1px solid #4B4B4B;
+    border-radius: 80px;
+    padding: 8px 16px;
+}
+
+.page-btn-left a {
+    padding-left: 1em;
+    color: #4B4B4B;
+}
+
+.page-btn-right {
+    background-image: url('images/chevron-right 1.png');
+    background-repeat: no-repeat;
+    background-position: 60px center;
+    background-size: 24px;
+    border: 1px solid #4B4B4B;
+    border-radius: 80px;
+    padding: 8px 16px;
+}
+
+.page-btn-right a {
+    padding-right: 1em;
+    color: #4B4B4B;
+}
+
+@media(max-width:992px) {
+    .page-btn {
+        margin-top: 48px;
+    }
+}
+
+@media(max-width:767px) {
+    .content {
+        padding: 12px;
+        margin-bottom: 48px;
+    }
+
+    .page-btn {
+        margin-top: 48px;
+    }
+}
+
+/*footer*/
+.contact {
+    border-top: 1px solid #4B4B4B;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+
+.email {
+    font-size: 32px;
+}
+
+a:mail.email{alysewang@example.com}
+
+.sm-icon-list {
+    display:flex;
+    justify-content:space-between; 
+
+}
+
+.copyright {
+    text-align: center;
+    padding: 24px;
+    background: #FFFFFF;
+}
+
+@media(max-width:992px) {
+    .contact {
+        display: none;
+    }
+}
+
+@media(max-width:767px) {
+    .contact {
+        display: none;
+    }
+}
